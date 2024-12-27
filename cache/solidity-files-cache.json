@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "C:\\Users\\Uday\\web3\\hardhat-lottery\\contracts\\Raffle.sol": {
-      "lastModificationDate": 1735020843859,
-      "contentHash": "504bf79e18000eeb2f5ca755455dfaeb",
+      "lastModificationDate": 1735278867241,
+      "contentHash": "201dc19c66bb18226e4c34884449d26f",
       "sourceName": "contracts/Raffle.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -37,6 +37,7 @@
         }
       },
       "imports": [
+        "@chainlink/contracts/src/v0.8/vrf/interfaces/VRFCoordinatorV2Interface.sol",
         "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol"
       ],
       "versionPragmas": [
@@ -87,6 +88,49 @@
       ],
       "artifacts": [
         "VRFConsumerBaseV2"
+      ]
+    },
+    "C:\\Users\\Uday\\web3\\hardhat-lottery\\node_modules\\@chainlink\\contracts\\src\\v0.8\\vrf\\interfaces\\VRFCoordinatorV2Interface.sol": {
+      "lastModificationDate": 1735020288948,
+      "contentHash": "c4963e3862ffee2974cc634689745531",
+      "sourceName": "@chainlink/contracts/src/v0.8/vrf/interfaces/VRFCoordinatorV2Interface.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "VRFCoordinatorV2Interface"
       ]
     }
   }
