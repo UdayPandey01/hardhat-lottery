@@ -70,9 +70,11 @@ contract Raffle is VRFConsumerBaseV2 {
         address payable recentWinner = s_players[indexOfWinner];
         s_recentWinner = recentWinner;
         (bool success, ) = recentWinner.call{value: address(this).balance}("");
+
         if (!success) {
             revert Raffle__transferfailed();
         }
+        
         emit winnerPicked(recentWinner);
     }
 
